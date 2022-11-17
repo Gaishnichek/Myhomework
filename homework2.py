@@ -14,9 +14,9 @@
 # else:
 #     print("А, квитків вже немає")
 # Мой вариант
+
 age = -1
 client=input("Введіть свій вік ")
-age = int(client)
 if client.isnumeric():
     age = int(client)
 
