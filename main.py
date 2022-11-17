@@ -69,12 +69,24 @@ if __name__ == '__main__':
 # print(type(str1))
 # print(type(int1))
 
-age = -1
-user_data = input("Введіть свій вік\n")
-if user_data.isnumeric():
-    age = int(user_data)
-print(type(user_data))
-print(type(age))
+# age = -1
+# user_data = input("Введіть свій вік\n")
+# if user_data.isnumeric():
+#     age = int(user_data)
+# print(type(user_data))
+# print(type(age))
+#
+# print(user_data+"10")
+# print(age+10)
 
-print(user_data+"10")
-print(age+10)
+client=input("Введіть свій вік ")
+age = int(client)
+if 0<age<=7:
+    print("Де твої батьки?")
+elif 7<age<=16:
+    print("Це кіно для дорослих")
+elif 16<age<=64:
+    print("А, квитки закінчилися")
+elif 64<age<=150:
+    print("Ваше пенсійне посвідчення")
+
