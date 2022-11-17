@@ -17,7 +17,9 @@
 
 client=input("Введіть свій вік ")
 age = int(client)
-if -1<age<=7:
+if 1>age or age<155:
+    print("Вы ДОЛБОЕБ")
+elif -1<age<=7:
     print("Де твої батьки?")
 elif 7<age<=16:
     print("Це кіно для дорослих")
@@ -25,10 +27,6 @@ elif 16<age<=64:
     print("А, квитки закінчилися")
 elif 64<age<=150:
     print("Ваше пенсійне посвідчення")
-elif -45<age<=-1:
-    print("Вы ДОЛБОЕБ")
-
-
 
 
 
