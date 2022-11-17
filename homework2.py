@@ -14,9 +14,12 @@
 # else:
 #     print("А, квитків вже немає")
 # Мой вариант
-
+age = -1
 client=input("Введіть свій вік ")
 age = int(client)
+if client.isnumeric():
+    age = int(client)
+
 if 1>age or age<155:
     print("Вы ДОЛБОЕБ")
 elif -1<age<=7:
