@@ -14,24 +14,41 @@
 # else:
 #     print("А, квитків вже немає")
 # Мой вариант
+#
+# age = -1
+# client=input("Введіть свій вік ")
+# if client.isnumeric():
+#     age = int(client)
+#
+# if 1>age or age<155:
+#     print("Вы ДОЛБОЕБ")
+# elif -1<age<=7:
+#     print("Де твої батьки?")
+# elif 7<age<=16:
+#     print("Це кіно для дорослих")
+# elif 16<age<=64:
+#     print("А, квитки закінчилися")
+# elif 64<age<=150:
+#     print("Ваше пенсійне посвідчення")
 
 age = -1
-client=input("Введіть свій вік ")
-if client.isnumeric():
-    age = int(client)
-
-if 1>age or age<155:
-    print("Вы ДОЛБОЕБ")
-elif -1<age<=7:
+user_data = input("Введіть свій вік\n")
+if user_data.isnumeric():
+    age=int(user_data)
+if age==-1:
+    print("Введіть правильне значенни")
+elif age>120:
+    print("Так довго не живуть!")
+elif len(user_data)==2 and user_data[0]==user_data[1]:
+    print("Як цікаво")
+elif age in range(0,7):
     print("Де твої батьки?")
-elif 7<age<=16:
-    print("Це кіно для дорослих")
-elif 16<age<=64:
-    print("А, квитки закінчилися")
-elif 64<age<=150:
-    print("Ваше пенсійне посвідчення")
-
-
+elif age in range(7,16):
+    print("Це фільм для дорослих!")
+elif age in range():
+    print("Покажіть пенсійне посвідчення!")
+else:
+    print("А білетів вже немає!")
 
 
 
