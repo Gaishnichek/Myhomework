@@ -21,28 +21,60 @@ if __name__ == '__main__':
 
 # bool
 
-# str
+# # str
+#
+# name="Stas"
+# age= 29
+#
+# my_str= "Привіт! Мене звати %s, мені %s років" % (name, age)
+# print(my_str)
+# tpl="Привіт! Мене звати {}, мені {} років"
+# my_str=  tpl.format (name, age)
+# print(my_str)
+#
+#
+# tpl="Привіт! Мене звати {name_var}, мені {age_var} років"
+# my_str=  tpl.format (name_var=name, age_var=age)
+# print(my_str)
+#
+# # f-sting
+# my_str=f"Привіт! Мене звати {name}, мені {age} років"
+# print(my_str)
+#
+# print("Hello" in my_str)
+#
+# print("Привіт" in my_str)
+#
+# my_str=f"Привіт! Мене звати {name}, мені {age} років"
+#
+# my_str= my_str.replace("a", "++")
+# print(my_str)
+# # обрезка ))
+# my_str=f"   Привіт! Мене звати {name}, мені {age} років   "
+# my_str= my_str.strip("   ", "   ")
+# print(my_str)
 
-name="Stas"
-age= 29
+# name=("ssl")
+# age=("aas")
+# # f-sting
+# print(my_str)
+# my_str=f"Привіт! Мене звати {name}, мені {age} років"
+# str1 = "2"
+# str2 = "2"
+# int1 = 2
+# int2 = 2
+#
+# print(str1+str2)
+# print(int1+int2)
+# print(type(str1))
+# print(type(int1))
 
-my_str= "Привіт! Мене звати %s, мені %s років" % (name, age)
-print(my_str)
-tpl="Привіт! Мене звати {}, мені {} років"
-my_str=  tpl.format (name, age)
-print(my_str)
+age = -1
+user_data = input("Введіть свій вік\n")
+if user_data.isnumeric():
+    age = int(user_data)
+print(type(user_data))
+print(type(age))
 
-
-tpl="Привіт! Мене звати {name_var}, мені {age_var} років"
-my_str=  tpl.format (name_var=name, age_var=age)
-print(my_str)
-
-# f-sting
-my_str=f"Привіт! Мене звати {name}, мені {age} років"
-print(my_str)
-
-print("Hello" in my_str)
-
-print("Привіт" in my_str)
-
-my_str=f"Привіт! Мене звати {name}, мені {age} років"
+print(user_data+"10")
+print(age+10)
